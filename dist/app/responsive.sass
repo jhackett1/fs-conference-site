@@ -1,0 +1,45 @@
+$max-width: 800px
+
+@media screen and (min-width: 900px)
+  section#hero
+    h1
+      font-size: 3em
+      margin-bottom: 20px
+
+// First tablet breakpoint
+@media screen and (min-width: 700px)
+
+  a.btn:hover
+    filter: brightness(1.1)
+    transform: scale(1.03)
+    transition: 0.1s ease-in
+
+  header
+    justify-content: center
+
+  section#hero
+    justify-content: center
+    text-align: center
+    align-items: center
+    h1
+      max-width: $max-width
+
+  section#about
+    article
+      column-count: 2
+      max-width: $max-width
+      margin: 0px auto 20px auto
+      p
+        text-align: left
+
+  section#app, section#cta
+    img
+      max-width: $max-width
+    p
+      max-width: 500px
+      margin: 0px auto 20px auto
+    a.btn
+      margin: 0px auto 20px auto
+
+  h3, p
+    text-align: center
